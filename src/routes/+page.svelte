@@ -1,2 +1,10 @@
-<h1>home</h1>
-<p>this is the home page.</p>
+<script>
+  import Navbar from './Navbar.svelte';
+</script>
+
+<p> arst </p>
+<Navbar />
+
+<main>
+  <!-- Your page content here -->
+</main>
