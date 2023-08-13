@@ -11,13 +11,14 @@
   
 </script>
 
-<div class="github-project rounded-ld hover:border-fuchsia-400 border-4 border-gray-800 rounded-lg bg-gray-700 p-4 hover:-translate-y-1 hover:scale-105 inline-block relative">
-  <a href="https://www.codefactor.io/repository/github/juli0n21/{repoName}" class="absolute top-2 right-0">
+<div class="github-project rounded-ld border-4 border-gray-800 rounded-lg bg-gray-600 p-4 hover:-translate-y-1 hover:scale-105 inline-block relative">
+  <a href="https://www.codefactor.io/repository/github/juli0n21/{repoName}" class="absolute top-2 right-10">
       <img src="https://www.codefactor.io/repository/github/juli0n21/{repoName}/badge" alt="CodeFactor" onerror="this.style.display='none'"/>
   </a>
-  <a href={repoUrl} target="_blank" rel="noopener noreferrer" class="absolute top-0 left-4">{repoName}</a>
-
-  {#if description != null}
+  <a href={repoUrl} target="_blank" rel="noopener noreferrer" class="absolute top-0">{repoName} →</a>
+<p class="absolute top-1 right-0" >★: {stargazersCount} </p>
+ 
+{#if description != null}
   <p class="mt-4">{description}</p>
   {:else}
   <p class="mt-4">No description</p>
@@ -28,7 +29,8 @@
       <p>Language: unknown</p>
   {/if}
   
-  <p>Stars: {stargazersCount} | Forks: {forksCount} | Issues: {openIssuesCount}</p>
+   <p class="absolute top-8 right-0">Forks: {forksCount}</p>
+    <p class="absolute top-14 right-0">Issues: {openIssuesCount}</p>
 </div>
 
 
@@ -38,6 +40,7 @@ p {
 }
 
 a {
-  color: limegreen;
+  color: rgb(80, 252, 80);
 }
+
 </style>

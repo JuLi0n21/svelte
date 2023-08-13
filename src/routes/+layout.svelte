@@ -3,11 +3,8 @@
     import Navbarlink from "./Navbarlink.svelte"
     let src = "favicon.png";
     let links = [
-    {name: "Products", href:"/about" },
-    {name: "About Us", href:"/contact" },
-    {name: "Contact", href:"/profile" },
-    {name: "Cart", href:"/cart" },
-    {name: "Githubrepos", href:"/portfolio" }];
+    {name: "About me", href:"/about" },
+    {name: "Projects", href:"/Projects" }];
 
 </script>
 <nav class="flex justify-between bg-slate-900">

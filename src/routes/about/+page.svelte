@@ -1,2 +1,7 @@
-<h1>About Page</h1>
-<p>Welcome to the About Page</p>
+<script>
+	import Aboutme from "./Aboutme.svelte";
+
+
+</script>
+
+<Aboutme/>

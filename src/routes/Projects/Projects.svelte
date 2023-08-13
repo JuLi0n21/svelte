@@ -14,10 +14,11 @@ import Githubrepo from './Githubrepo.svelte';
 </script>
 
 <div class="container mx-auto mt-8 ">
-  <h2 class="text-3xl font-semibold mb-4">Githubrepos</h2>
+  <h2 class="text-3xl font-semibold mb-4">Projects</h2>
+  <p>Some Projects i worked on, in my free time and for uni.</p>
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
    {#await getrepos()}
-    <p> ...Waiting </p>
+    <p> ...Loading </p>
    {:then data} 
     {#each data as repository (repository.id)}
       <Githubrepo {repository}/>
